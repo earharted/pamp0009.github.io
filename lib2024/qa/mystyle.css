@@ -5,12 +5,8 @@
 
 .content {
 	text-align:center;
-	background-color:lightyellow;
+	background: lightblue;
+	background-size: span;
 }
 
-@keyframes animation {
-  0%   {background-color: red;}
-  25%  {background-color: yellow;}
-  50%  {background-color: blue;}
-  100% {background-color: green;}
-}
+p>span{background-color:lightblue;line-height:2}
