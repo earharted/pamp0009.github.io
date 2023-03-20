@@ -6,7 +6,16 @@
 .content {
 	text-align:center;
 	background: lightblue;
-	background-size: span;
+	background-size: cover;
 }
 
-p>span{background-color:lightblue;line-height:2}
+.anitext {
+	text-align: center;
+}
+
+.image {
+	position: absolute;
+		bottom:0px;
+		right:500px;
+	size: height: 25%; width: 25%;
+}
