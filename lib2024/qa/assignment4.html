@@ -1,29 +1,27 @@
-<!DOCTYPE HTML>
-	<header>
+<!DOCTYPE html>
+<html>
+	<head>
 		<meta title="Temperature Converter">
 		<meta charset="UTF-8">
 		<meta lang="en">
 		<link rel="stylesheet" href="thermostyle.css">
 		<link rel="icon" href="">
-			<style>
+	</head>
+<body>
+	<h1>Temperature Converter</h1>
+	<p>Convert a Fahrenheit temperature to Celcius by typing it in the box below.</p>
+	<p>
+ 	 <label>Fahrenheit</label>
+ 	 <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+	</p>
+	<p>Celcius: <span id="outputCelcius"></span></p>
 
-			</style>
-	</header>
-
-	<body>
-		 <p>
-  <label>Fahrenheit</label>
-  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
-  oninput="temperatureConverter(this.value)"
-  onchange="temperatureConverter(this.value)">
-</p>
-<p>Celsius: <span id="outputCelsius"></span></p> 
-
-<script> function temperatureConverter(valNum) {
-  valNum = parseFloat(valNum);
-  document.getElementById("outputCelsius").innerHTML = (valNum-32) / 1.8;
-} 
+<script>
+	function temperatureConverter(valNum) {
+ 	valNum = parseFloat(valNum);
+ 	document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+	}
 </script>
 
-	</body>
-
+</body>
+</html>
