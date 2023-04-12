@@ -14,10 +14,10 @@
 	<h1 class="titles">Temperature Converter</h1>
 	<p class="text">Convert a Fahrenheit temperature to Celcius by typing it in the box below.</p>
 	<p class="text">
- 	 <label>Fahrenheit</label>
- 	 <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+ 	 <label class="text">Fahrenheit Input:</label>
+ 	 <input id="inputFahrenheit" type="number" placeholder="Type here" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
 	</p>
-	<p class="text">Celcius: <span id="outputCelcius"></span></p>
+	<p class="text">Celcius Output: <span id="outputCelcius"></span></p>
 
 <script>
 	function temperatureConverter(valNum) {
