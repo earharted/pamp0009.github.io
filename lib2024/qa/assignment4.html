@@ -6,21 +6,26 @@
 		<meta lang="en">
 		<link rel="stylesheet" href="thermostyle.css">
 		<link rel="icon" href="">
-			<style>
-				.body {
-					  background-image: linear-gradient(to right, red, blue);
-					}
-			</style>
 	</head>
 	<body>
-		<!-- needs button, error message, thermometer image -->
-		<h1 class="title">Temperature Converter</h1>
-		<h2 class="title">Fahrenheit to Celcius</h2>
-
+		<!-- needs button, error message, thermometer image, script -->
+		<div class="titlecontainer">
+			<h1 class="title">Temperature Converter</h1>
+			<h2 class="title">Fahrenheit to Celcius</h2>
+			<p><label>Fahrenheit</label>
+				  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" 
+				  oninput="temperatureConverter(this.value)" 
+				  onchange="temperatureConverter(this.value)"
+				  onerror="temperatureConverter(Invalid Input)">
+			</p>
+			<p>Celcius: <span id="outputCelcius"></span></p>
+		</div>
 	<script>
-		<!-- (x°F − 32) × 5/9 = y°C -->
-		<!-- use w3schools -->
-
+		<!-- lecture hint (x°F − 32) × 5/9 = y°C (w3schools is diff?) -->
+		function temperatureConverter(valNum) {
+ 			valNum = parseFloat(valNum);
+  			document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+					}
 	</script>
 	</body>
 </html>

@@ -1,3 +1,25 @@
+<! -- remember, (.) is for classes, not full elements -->
+
+
+body {
+	background-color: white;
+}
+
+html {
+	background-image: linear-gradient(to right, red, blue);
+}
+
+.titlecontainer {
+	background-color: white;
+	margin: auto;
+	width: 250px;
+}
+
+.scriptcontainer {
+	
+}
+
+
 .title {
 	text-align: center;
 }
@@ -6,6 +28,3 @@
 	text-align: center;
 }
 
-.body {
-	background-image: linear-gradient(to right, red, blue);
-}
