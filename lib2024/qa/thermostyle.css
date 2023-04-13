@@ -12,11 +12,15 @@ html {
 .titlecontainer {
 	background-color: white;
 	margin: auto;
-	width: 250px;
+	width: 300px;
+		border-width: 1px;
+		border-style: dotted;
+		border-color: purple;
 }
 
 .scriptcontainer {
-	
+	text-align: center;
+	margin: auto;
 }
 
 
@@ -28,3 +32,9 @@ html {
 	text-align: center;
 }
 
+.image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10;
+	}

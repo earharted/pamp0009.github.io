@@ -16,18 +16,24 @@
 				  <input id="inputFahrenheit" type="number" placeholder="Type Here"
 				  oninput="temperatureConverter(this.value)" 
 				  onchange="temperatureConverter(this.value)"
-				  if type="charset") {
-
-				  }
+				  oninvalid="alert('Numbers only!');" type="number" required>
 			</p>
 			<p>Celcius: <span id="outputCelcius"></span></p>
 		</div>
-	<script>
-		<!-- lecture hint (x°F − 32) × 5/9 = y°C (w3schools is diff?) -->
-		function temperatureConverter(valNum) {
+		<div class="scriptcontainer">
+		<script>
+			<!-- lecture hint (x°F − 32) × 5/9 = y°C (w3schools is diff?) -->
+			function temperatureConverter(valNum) {
  			valNum = parseFloat(valNum);
   			document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
 					}
-	</script>
+		</script>
+		</div>
+		<img src="file:///C:/Users/siobh/OneDrive/Documents/GitHub/pamp0009.github.io/lib2024/qa/thermometer.png"
+			title="A clipart image of a mercury thermometer filled 3/4ths of the way."
+			alt="A clipart image of a mercury thermometer filled 3/4ths of the way. "
+			class="image"
+			width="7%"
+			height="7%">
 	</body>
 </html>
