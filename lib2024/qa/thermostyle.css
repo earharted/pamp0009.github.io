@@ -1,4 +1,4 @@
-.titles {
+.title {
 	text-align: center;
 }
 
@@ -7,9 +7,5 @@
 }
 
 .body {
-	background-image: ;
-}
-
-.html {
-	background-color: blueviolet;
+	background-image: linear-gradient(to right, red, blue);
 }
