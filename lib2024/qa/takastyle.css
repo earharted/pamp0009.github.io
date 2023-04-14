@@ -7,6 +7,15 @@
 	text-align: center;
 }
 
+.textcontainer {
+  background-color: slateblue;
+  position: fixed;
+  top: 10px;
+  right: 625px;
+  z-index: 1;
+  max-width: 500px;
+}
+
 .nav {
   max-width: 165px;
   position: fixed;
@@ -19,7 +28,15 @@
 }
 
 .mainbg {
-	background-image: url("file:///C:/Users/siobh/OneDrive/Documents/GitHub/pamp0009.github.io/lib2024/qa/mainbg.gif
-		")
-		
+	background-image: url("file:///C:/Users/siobh/OneDrive/Documents/GitHub/pamp0009.github.io/lib2024/qa/mainbg.gif");
+  background-size: cover;
+  height: 100%
+}
+
+.mainimg {
+  width: 48%;
+  height: 48%;
+  position: fixed;
+  top: 10px;
+  right: 0px;
 }
